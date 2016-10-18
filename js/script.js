@@ -95,7 +95,7 @@
     /* if empty, then resets to original list and calls to determine purpose  */
     /* This is for EXTRA CREDIT dynamically filter student listings           */
     /**************************************************************************/
-    document.getElementById("inputBox").addEventListener("keyup", function() {
+    document.getElementById("inputBox").addEventListener("keyup", function(event) {
         var inputText = event.target.value;
         key = inputText;
         if (key === "")
