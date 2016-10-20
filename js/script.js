@@ -107,9 +107,9 @@
     /* getPages()                                                             */
     /* Accepts the list item count and determines how many pages to display   */
     /* If list is there calls to remove list items, performs a reset of       */
-    /* currentPage and lastPage to fix a bug when a user searches from a      */
-    /* higher page number than the results has, calls to add the page links   */
-    /* as long as there is more than 1 page and calls to make the link active */
+    /* currentPage to fix a bug when a user searches from a higher page       */
+    /* number than the results has, calls to add the page links as long as    */
+    /* there is more than 1 page and calls to make the link active            */
     /**************************************************************************/
     function getPages(listItemCount) {
         var list = document.getElementsByClassName("pagination")[0];
@@ -146,7 +146,7 @@
             var btn = document.createElement("li");
             var link = document.createElement("a");
             link.innerText = i;
-            link.setAttribute("href", "index.html#" );
+            link.setAttribute("href", "#" +i );
             btn.appendChild(link);
             list.appendChild(btn);
         }
